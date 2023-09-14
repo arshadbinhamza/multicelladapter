@@ -143,8 +143,8 @@ dependencies {
 
 
     testImplementation ("junit:junit:4.13.2")
-    androidTestImplementation ("androidx.test.ext:junit:1.2.0-alpha01")
-//    implementation ("androidx.test.espresso:espresso-intents:3.5.1")
+    androidTestImplementation ("androidx.test.ext:junit:1.1.3")
+    implementation ("androidx.test.espresso:espresso-intents:3.4.0")
 //    debugImplementation ("androidx.test:core:1.5.0")
 //    androidTestImplementation ("androidx.test:runner:1.5.0")
 //    androidTestImplementation ("androidx.test:rules:1.6.0-alpha01")
