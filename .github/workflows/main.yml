@@ -43,7 +43,8 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: report
-          path: app/build/reports/coverage/androidTest/debug
+          #path: app/build/reports/coverage/androidTest/debug
+          path: app/build/reports/androidTest/debug
             # path: app/build/test-results
 
 
