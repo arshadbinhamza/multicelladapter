@@ -1,5 +1,6 @@
 package com.abh.sample.ui
 
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -47,6 +48,10 @@ class MovieAdapter :RecyclerView.Adapter<RecyclerView.ViewHolder>() {
                     .load("https://image.tmdb.org/t/p/w500"+movieList[position].poster_path)
                     .into(type1ViewHolder.binding.movieImage)
                 type1ViewHolder.binding.movieName.text = movieList[position].title
+
+                holder.itemView.setOnClickListener(View.OnClickListener {
+                    Log.d("sdfsfs","dsfsfsf")
+                })
             }
             TYPE_2 -> {
                 val type2ViewHolder = holder as Type2ViewHolder
