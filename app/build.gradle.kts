@@ -70,11 +70,7 @@ android {
 
             // Code underneath /src/{variant}/kotlin will also be picked up here
             sourceDirectories.setFrom(this@closureOf.sourceSets.flatMap { it.javaDirectories })
-            executionData.setFrom(fileTree("$buildDir").matching {
-                include("**/jacoco/testDebugUnitTest.exec")
-                include("**/outputs/code-coverage/connected/*coverage.ec")
-            })
-//            executionData.setFrom(file("$buildDir/jacoco/$testTaskName.exec"))
+            executionData.setFrom(file("$buildDir/jacoco/$testTaskName.exec"))
         }
 
         jacocoTestReport.dependsOn(reportTask)
